@@ -4,11 +4,12 @@ import React from "react";
 import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 
-import Header from "./components/Header/Header.js";
-import Card from "./components/Card/Card.js";
-import Footer from "./components/Footer/Footer.js";
-import Parallax from "./components/Parallax/Parallax.js";
-import Links from "./Views/Links.js";
+import Header from "../components/Header/Header.js";
+import Card from "../components/Card/Card.js";
+import Footer from "../components/Footer/Footer.js";
+import Parallax from "../components/Parallax/Parallax.js";
+import Links from "./Links.js";
+import index from "../index.js";
 
 
 import GridContainer from "components/Grid/GridContainer.js";
@@ -18,7 +19,7 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
 
-const App = (props) => {
+const Landingpage = (props) => {
   const classes = useStyles();
   return (
     <>
@@ -233,4 +234,4 @@ const App = (props) => {
   );
 };
 
-export default App;
+export default Landingpage;
