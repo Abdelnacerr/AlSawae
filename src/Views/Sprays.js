@@ -4,7 +4,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import Header from "../components/Header/Header.js";
 import Hlinks from "./Hlinks";
 
-function Contact() {
+function Sprays() {
   return (
     <>
       <Header
@@ -22,4 +22,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Sprays;

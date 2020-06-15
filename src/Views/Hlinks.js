@@ -1,8 +1,7 @@
 /*eslint-disable*/
 import React from "react";
-import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
-import { Link, BrowserRouter as Router} from "react-router-dom";
+import { Link} from "react-router-dom";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -11,7 +10,7 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Apps, Email, Info } from "@material-ui/icons";
+import { Apps, Email, Info, Home, Twitter,Facebook, Instagram } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -21,12 +20,21 @@ import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js
 
 const useStyles = makeStyles(styles);
 
-export default function HeaderLinks(props) {
+export default function Hlinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
+       <ListItem className={classes.listItem}>
+          <Button
+          component={Link}
+           Link to="/"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <Home className={classes.icons} /> Home
+          </Button>
+      </ListItem>
       <ListItem className={classes.listItem}>
-        <Router>
           <CustomDropdown
             noLiPadding
             buttonText="Products"
@@ -36,7 +44,7 @@ export default function HeaderLinks(props) {
             }}
             buttonIcon={Apps}
             dropdownList={[
-              <Link to="/" className={classes.dropdownLink}>
+              <Link to="/Perfumes" className={classes.dropdownLink}>
                 PERFUMES
               </Link>,
               <Link to="/Sprays" className={classes.dropdownLink}>
@@ -44,10 +52,8 @@ export default function HeaderLinks(props) {
               </Link>,
             ]}
           />
-        </Router>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Router>
           <Button
           component={Link}
            Link to="/About"
@@ -56,10 +62,8 @@ export default function HeaderLinks(props) {
           >
             <Info className={classes.icons} /> About Us
           </Button>
-        </Router>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Router>
           <Button
             component={Link}
             to="/Contact"
@@ -68,7 +72,6 @@ export default function HeaderLinks(props) {
           >
             <Email className={classes.icons} /> Contact US
           </Button>
-        </Router>
       </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
@@ -81,14 +84,14 @@ export default function HeaderLinks(props) {
           title="Follow us on twitter"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
-        >
+        > 
           <Button
             href="https://twitter.com/CreativeTim?ref=creativetim"
             target="_blank"
             color="transparent"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
+            <Twitter className={classes.socialIcons + " fab fa-twitter"} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -105,7 +108,7 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
+            <Facebook className={classes.socialIcons + " fab fa-facebook"} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -122,7 +125,7 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
+            <Instagram className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
       </ListItem>

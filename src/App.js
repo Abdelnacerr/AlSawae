@@ -1,236 +1,29 @@
 import React from "react";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
-// nodejs library that concatenates classes
-import classNames from "classnames";
-import { makeStyles } from "@material-ui/core/styles";
-
-import Header from "./components/Header/Header.js";
-import Card from "./components/Card/Card.js";
-import Footer from "./components/Footer/Footer.js";
-import Parallax from "./components/Parallax/Parallax.js";
-import Links from "./Views/Links.js";
+import Home from "./Views/Home";
+import About from "./Views/About";
+import Contact from "./Views/Contact";
+import Perfumes from "./Views/Perfumes";
+import Sprays from "./Views/Sprays";
 
 
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-
-import styles from "assets/jss/material-kit-react/views/components.js";
-
-const useStyles = makeStyles(styles);
-
-const App = (props) => {
-  const classes = useStyles();
+function App() {
   return (
-    <>
-      <Header
-        brand="SAWAE BRANDS"
-        rightLinks={<Links />}
-        color="transparent"
-        fixed
-        changeColorOnScroll={{
-          height: 400,
-          color: "white",
-        }}
-      />
-<Parallax image={require("assets/img/bg4.jpg")}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem>
-              <div className={classes.brand}>
-                <h1 className={classes.title}>SAWAE BRANDS.</h1>
-                <h3 className={classes.subtitle}>
-                  A wholesale perfumes distributor based in Kenya and Dubai.
-                </h3>
-              </div>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </Parallax>   
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        This is some text within a card body.
-        This is some text within a card bodyThis is some text within a card body
-        This is some text within a card body
-        This is some text within a card body
-        This is some text within a card body
-        This is some text within a card body
-        This is some text within a card body
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
-        This is some text within a card body.
+    <div>
+      <Router>
+        <Switch >
+          <Route exact path="/" component={Home} ></Route>
+          <Route path="/About" component={About} ></Route>
+          <Route path="/Contact" component={Contact} ></Route>
+          <Route path="/Perfumes" component={Perfumes} ></Route>
+          <Route path="/Sprays" component={Sprays} ></Route>
 
-        </div>
-      <Card>
-        <Footer>
-          
-        </Footer>
-      </Card>
-    </>
+        </Switch>
+      </Router>
+    </div>
   );
-};
+}
 
 export default App;
+
