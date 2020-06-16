@@ -1,5 +1,7 @@
 import React from "react";
 
+// nodejs library that concatenates classes
+import classNames from "classnames";
 import Parallax from "components/Parallax/Parallax.js";
 import Header from "../components/Header/Header.js";
 import Hlinks from "./Hlinks";
@@ -26,7 +28,7 @@ function Home(props) {
           color: "white",
         }}
       />
-<Parallax image={require("assets/img/bg4.jpg")}>
+      <Parallax image={require("assets/img/bg4.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
@@ -40,6 +42,10 @@ function Home(props) {
           </GridContainer>
         </div>
       </Parallax>
+
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        This is some text within a card body.
+      </div>
     </>
   );
 }
