@@ -5,7 +5,7 @@ import classNames from "classnames";
 import Parallax from "components/Parallax/Parallax.js";
 import Header from "../components/Header/Header.js";
 import Hlinks from "./Hlinks";
-
+import SectionCarousel from "./SectionCarousel";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import { makeStyles } from "@material-ui/core/styles";
@@ -34,17 +34,15 @@ function Home(props) {
             <GridItem>
               <div className={classes.brand}>
                 <h1 className={classes.title}>Sawae Brands.</h1>
-                <h3 className={classes.subtitle}>
+                <h4 className={classes.subtitle}>
                   Wholesale Perfumes and Sprays Distributor.
-                </h3>
+                </h4>
               </div>
             </GridItem>
           </GridContainer>
         </div>
-      </Parallax>
-
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        This is some text within a card body.
+      </Parallax><div className={classNames(classes.main, classes.mainRaised)}>
+      <SectionCarousel />
       </div>
     </>
   );
