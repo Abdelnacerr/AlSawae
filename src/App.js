@@ -6,6 +6,7 @@ import About from "./Views/About";
 import Contact from "./Views/Contact";
 import Perfumes from "./Views/Perfumes";
 import Sprays from "./Views/Sprays";
+import SectionCarousel from "./Views/SectionCarousel";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <Route path="/Contact" component={Contact} ></Route>
           <Route path="/Perfumes" component={Perfumes} ></Route>
           <Route path="/Sprays" component={Sprays} ></Route>
-
+          <Route path="/SectionCarousel" component={SectionCarousel} ></Route>
         </Switch>
       </Router>
     </div>

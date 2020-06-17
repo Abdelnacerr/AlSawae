@@ -1,76 +1,50 @@
 import React from "react";
-// react component for creating beautiful carousel
-import Carousel from "react-slick";
-// @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-import Instagram from "@material-ui/icons/Instagram";
-// core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
+import { Carousel } from "react-responsive-carousel";
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
-
-import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
-
-const useStyles = makeStyles(styles);
-
-export default function SectionCarousel() {
-  const classes = useStyles();
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: false
-  };
+function SectionCarousel() {
   return (
-    <div className={classes.section}>
-      <div className={classes.container}>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
-            <Card carousel>
-              <Carousel {...settings}>
-                <div>
-                  <img src={image1} alt="First slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <h4>
-                      <Instagram className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
-                  </div>
-                </div>
-                <div>
-                  <img
-                    src={image2}
-                    alt="Second slide"
-                    className="slick-image"
-                  />
-                  <div className="slick-caption">
-                    <h4>
-                      <Instagram className="slick-icons" />
-                      Somewhere Beyond, United States
-                    </h4>
-                  </div>
-                </div>
-                <div>
-                  <img src={image3} alt="Third slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <h4>
-                      <Instagram className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
-                  </div>
-                </div>
-              </Carousel>
-            </Card>
-          </GridItem>
-        </GridContainer>
-      </div>
+  <Carousel autoPlay>
+    <div>
+      <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
+      <p className="legend">Legend 1</p>
     </div>
-  );
-}
+    <div>
+      <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg" />
+      <p className="legend">Legend 2</p>
+    </div>
+    <div>
+      <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-3.jpg" />
+      <p className="legend">Legend 3</p>
+    </div>
+    <div>
+      <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" />
+      <p className="legend">Legend 4</p>
+    </div>
+    <div>
+      <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-5.jpg" />
+      <p className="legend">Legend 5</p>
+    </div>
+    <div>
+      <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
+      <p className="legend">Legend 6</p>
+    </div>
+    <div>
+      <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-7.jpg" />
+      <p className="legend">Legend 7</p>
+    </div>
+    <div>
+      <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-8.jpg" />
+      <p className="legend">Legend 8</p>
+    </div>
+    <div>
+      <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-9.jpg" />
+      <p className="legend">Legend 9</p>
+    </div>
+    <div>
+      <img alt="" src="http://lorempixel.com/output/cats-q-c-640-480-10.jpg" />
+      <p className="legend">Legend 10</p>
+    </div>
+    </Carousel>
+);
+  }
+export default SectionCarousel;

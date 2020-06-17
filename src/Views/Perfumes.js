@@ -43,8 +43,8 @@ function Perfumes() {
       <div className={classNames(classes.main, classes.mainRaised)} 
         style={{display:"flex", justifyContent: "space-around"}}> 
       
-      <Cards image={bg3} /> 
-      <Cards image={bg3} /> 
+      <Cards image={bg3} cardheader="Sapil" description="Swiss Arabian"/> 
+      <Cards image={bg3} cardheader="Sapil" description="Swiss Arabian"/> 
       <Cards image={bg3} /> 
       </div>
     </>

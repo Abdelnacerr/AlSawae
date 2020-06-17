@@ -8,6 +8,7 @@ import Button from "components/CustomButtons/Button.js";
 import CardHeader from "components/Card/CardHeader.js";
 
 import { cardTitle } from "assets/jss/material-kit-react.js";
+import { Description } from "@material-ui/icons";
 
 const styles = {
   cardTitle,
@@ -21,19 +22,18 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-const Cards = ({image}) => {
+const Cards = ({image,cardheader,description}) => {
   const classes = useStyles();
   return(
     <div>
       <Card style={{width: "20rem"}} >
-      <CardHeader color="warning">Featured</CardHeader>
+      <CardHeader color="warning">{cardheader}</CardHeader>
       <img style={{height: "10rem"}}src={image} alt="" />
 
       <CardBody >
         <h4 className={classes.cardTitle}>Special title treatment</h4>
         <p>
-          With supporting text below as a
-          natural lead-in to additional content.
+         {description}
         </p>
         <Button color="primary">Do something</Button>
       </CardBody>

@@ -9,6 +9,7 @@ import SectionCarousel from "./SectionCarousel";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import { makeStyles } from "@material-ui/core/styles";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -41,8 +42,11 @@ function Home(props) {
             </GridItem>
           </GridContainer>
         </div>
-      </Parallax><div className={classNames(classes.main, classes.mainRaised)}>
-      <SectionCarousel />
+      </Parallax>
+  <div style={{backgroundColor:"#F2F3F4"}}className={classNames(classes.main, classes.mainRaised)}>
+        <div style={{width:"50%", margin: "auto"}}>
+         <SectionCarousel />
+        </div>
       </div>
     </>
   );
