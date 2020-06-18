@@ -33,16 +33,15 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/?ref=mkr-footer"
+                href="/"
                 className={classes.block}
-                target="_blank"
               >
-                Creative Tim
+                Sawae Brands
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/presentation?ref=mkr-footer"
+                href="/About"
                 className={classes.block}
                 target="_blank"
               >
@@ -73,11 +72,11 @@ export default function Footer(props) {
           &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="https://www.creative-tim.com?ref=mkr-footer"
+            href="https://au.linkedin.com/in/mohamed-abdinasir-b50880bb"
             className={aClasses}
             target="_blank"
           >
-            Creative Tim
+            Mohamed Abdinasir
           </a>{" "}
           for a better web.
         </div>

@@ -8,6 +8,7 @@ import Hlinks from "./Hlinks";
 import SectionCarousel from "./SectionCarousel";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
+import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -34,18 +35,23 @@ function Home(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Sawae Brands.</h1>
-                <h4 className={classes.subtitle}>
-                  Wholesale Perfumes and Sprays Distributor.
-                </h4>
+                <Typography variant="h1" component="h2" >
+                  Sawae Brands.
+                </Typography>{" "}
+                <Typography className={classes.subtitle}variant="subtitle1" gutterBottom>
+                  Wholesale perfumes distributor for leading brands.
+                </Typography>
               </div>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
-  <div style={{backgroundColor:"#F2F3F4"}}className={classNames(classes.main, classes.mainRaised)}>
-        <div style={{width:"50%", margin: "auto"}}>
-         <SectionCarousel />
+      <div
+        style={{ backgroundColor: "#F2F3F4" }}
+        className={classNames(classes.main, classes.mainRaised)}
+      >
+        <div style={{ width: "50%", margin: "auto" }}>
+          <SectionCarousel />
         </div>
       </div>
     </>
