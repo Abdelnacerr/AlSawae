@@ -5,6 +5,7 @@ import classNames from "classnames";
 import Parallax from "components/Parallax/Parallax.js";
 import Header from "../components/Header/Header.js";
 import Hlinks from "./Hlinks";
+import Footer from "../components/Footer/Footer";
 import SectionCarousel from "./SectionCarousel";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -54,6 +55,7 @@ function Home(props) {
           <SectionCarousel />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
