@@ -13,7 +13,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import styles from "assets/jss/material-kit-react/views/components.js";
+import styles from "../assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
 
