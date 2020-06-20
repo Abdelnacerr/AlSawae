@@ -10,7 +10,7 @@ import Cards from "./Cards";
 import { makeStyles } from "@material-ui/core/styles";
 import styles from "../assets/jss/material-kit-react/views/components.js";
 
-import bg3 from "assets/img/bg3.jpg";
+import bg3 from "../assets/img/bg3.jpg";
 
 const useStyles = makeStyles(styles);
 function Perfumes() {
