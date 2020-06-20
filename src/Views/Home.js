@@ -2,7 +2,7 @@ import React from "react";
 
 // nodejs library that concatenates classes
 import classNames from "classnames";
-import Parallax from "components/Parallax/Parallax.js";
+import Parallax from "../components/Parallax/Parallax.js";
 import Header from "../components/Header/Header.js";
 import Hlinks from "./Hlinks";
 import Footer from "../components/Footer/Footer";
