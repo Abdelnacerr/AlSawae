@@ -1,6 +1,6 @@
 import React from "react";
 
-import Parallax from "components/Parallax/Parallax.js";
+import Parallax from "../components/Parallax/Parallax.js";
 import Header from "../components/Header/Header.js";
 import Hlinks from "./Hlinks";
 import ContactCards from "./ContactCards.js";
@@ -18,7 +18,7 @@ function Contact() {
           color: "white",
         }}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}  style={{display:"flex", justifyContent: "space-around" }}>
+      <Parallax image={require("../assets/img/bg4.jpg")}  style={{display:"flex", justifyContent: "space-around" }}>
         <ContactCards 
         cardheader="General Info"
         title="Help Desk"

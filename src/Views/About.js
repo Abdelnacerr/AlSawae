@@ -1,6 +1,6 @@
 import React from "react";
 
-import Parallax from "components/Parallax/Parallax.js";
+import Parallax from "../components/Parallax/Parallax.js";
 import Header from "../components/Header/Header.js";
 import Hlinks from "./Hlinks";
 
@@ -17,7 +17,7 @@ function About() {
           color: "white",
         }}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}> </Parallax>
+      <Parallax image={require("../assets/img/bg4.jpg")}> </Parallax>
     </>
   );
 }
