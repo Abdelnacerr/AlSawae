@@ -27,7 +27,7 @@ function Perfumes() {
           color: "white",
         }}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}> </Parallax>
+      <Parallax image={require("../assets/img/bg4.jpg")}> </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)} 
         style={{display:"flex", justifyContent: "space-around" }}> 
       
